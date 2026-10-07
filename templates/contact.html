@@ -1,0 +1,141 @@
+{% extends 'nav.html' %} {% block title %}Contact{% endblock title %} {% block
+home %}
+
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/about_contact.css') }}"
+/>
+
+<section class="contact-hero">
+  <div class="contact-hero-content">
+    <p class="section-tag">CONTACT KRISHNAVANI</p>
+
+    <h1>Let's <span>Connect</span></h1>
+
+    <p>
+      Have a question, suggestion, or feedback about KrishnaVani? We would love
+      to hear from you.
+    </p>
+  </div>
+</section>
+
+<section class="contact-section">
+  <div class="contact-info">
+    <div class="contact-card">
+      <div class="contact-icon">✦</div>
+
+      <h2>Share Your Feedback</h2>
+
+      <p>
+        Your suggestions can help us make KrishnaVani easier and better for
+        everyone interested in exploring the Bhagavad Gita.
+      </p>
+    </div>
+
+    <div class="contact-card">
+      <div class="contact-icon">?</div>
+
+      <h2>Have a Question?</h2>
+
+      <p>
+        If you have a question about the website, verse search, translations, or
+        project functionality, use the form beside this section.
+      </p>
+    </div>
+
+    <div class="contact-card">
+      <div class="contact-icon">ॐ</div>
+
+      <h2>Purpose of the Project</h2>
+
+      <p>
+        KrishnaVani is an educational project focused on providing a simple and
+        accessible digital experience for exploring Bhagavad Gita teachings.
+      </p>
+    </div>
+  </div>
+
+  <div class="contact-form-wrapper">
+    <h2>Send a Message</h2>
+
+    {% if submitted %}
+
+    <div class="success-message">
+      Thank you for your message. Your information has been received by the
+      application.
+    </div>
+
+    {% endif %}
+
+    <form method="POST" class="contact-form">
+      <div class="form-group">
+        <label for="name">Your Name</label>
+
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Subject</label>
+
+        <input
+          type="text"
+          id="subject"
+          name="subject"
+          placeholder="Enter message subject"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+
+        <textarea
+          id="message"
+          name="message"
+          rows="6"
+          placeholder="Write your message here..."
+          required
+        ></textarea>
+      </div>
+
+      <button type="submit" class="contact-button">Send Message</button>
+    </form>
+
+    <p class="form-note">
+      This contact form currently demonstrates the website interface. Email
+      delivery/storage can be connected later.
+    </p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2026 KrishnaVani. All rights reserved.</p>
+
+    <div class="footer-links">
+      <a href="{{ url_for('about') }}">About</a>
+      <a href="{{ url_for('contact') }}">Contact</a>
+      <a href="/">Home</a>
+    </div>
+  </div>
+</footer>
+
+{% endblock home %}

@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/translate.css') }}">
+    <title>KrishnaVani</title>
+  
+</head>
+
+<header>
+      <div class="container">
+        <div class="left-contain">
+          <div class="logo"></div>
+          <div class="brand-name">GitaVerse</div>
+        </div>
+
+        <div class="right-contain">
+          <a href="/">Home</a>
+        
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </header>
+
+{% block trans %}
+    
+{% endblock trans %}
+</html>

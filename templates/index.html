@@ -1,0 +1,24 @@
+{% extends 'generate.html' %}
+{% block Generate_page %}
+  <h1>Bhagavad Gita Shloka Completor</h1>
+
+  <form method="POST">
+    <label for="seed">Enter Word from Sholka :</label>
+    <input type="text" id="seed" name="seed" placeholder="Enter words" required>
+    <button type="submit">Find Shlokas</button>
+  </form>
+
+  {% if matches %}
+    <h2>Matching Shlokas:</h2>
+    {% for match in matches %}
+      <div class="shloka-card">
+        <h3>Shloka {{ loop.index }}</h3>
+        <pre>{{ match.shloka }}</pre>
+        <p><strong>{{ match.chapter_verse }}</strong></p>
+        <p><strong>Meaning:</strong> {{ match.translation }}</p>
+      </div>
+    {% endfor %}
+  {% elif seed_submitted %}
+    <p class="no-result">No matching shlokas found.</p>
+  {% endif %}
+{% endblock Generate_page %}

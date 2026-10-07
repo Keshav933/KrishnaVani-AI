@@ -1,0 +1,140 @@
+{% extends 'nav.html' %} {% block title %}About{% endblock title %} {% block
+home %}
+
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/about_contact.css') }}"
+/>
+
+<section class="about-hero">
+  <div class="about-hero-content">
+    <p class="section-tag">ABOUT KRISHNAVANI</p>
+
+    <h1>Connecting You With the <span>Wisdom of the Bhagavad Gita</span></h1>
+
+    <p class="hero-description">
+      KrishnaVani is a digital platform created to make the teachings of the
+      Bhagavad Gita easier to explore, search, understand, and learn.
+    </p>
+  </div>
+</section>
+
+<section class="about-section">
+  <div class="about-card">
+    <div class="about-icon">ॐ</div>
+
+    <h2>Our Purpose</h2>
+
+    <p>
+      The Bhagavad Gita contains timeless wisdom about life, duty, knowledge,
+      action, devotion, and self-realization. KrishnaVani provides a simple
+      digital interface where users can explore these teachings without needing
+      to remember the complete verse.
+    </p>
+  </div>
+
+  <div class="about-card">
+    <div class="about-icon">श्लोक</div>
+
+    <h2>What You Can Explore</h2>
+
+    <p>
+      KrishnaVani provides multiple ways to interact with the Bhagavad Gita. You
+      can search for shlokas using keywords, find a specific chapter and verse,
+      and explore the meaning of individual verses.
+    </p>
+
+    <div class="feature-list">
+      <div class="feature-item">
+        <span>01</span>
+        <div>
+          <h3>Shloka Search</h3>
+          <p>
+            Search for verses using words or phrases from the Bhagavad Gita.
+          </p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <span>02</span>
+        <div>
+          <h3>Verse Navigator</h3>
+          <p>Directly access a verse using its chapter and verse number.</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <span>03</span>
+        <div>
+          <h3>Translation</h3>
+          <p>
+            Explore translations and meanings to better understand the
+            teachings.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-card">
+    <div class="about-icon">AI</div>
+
+    <h2>Technology Behind KrishnaVani</h2>
+
+    <p>
+      The project combines a Flask-based web application with natural language
+      and machine-learning components. A trained neural network model is
+      included in the project for experimentation with Bhagavad Gita text and
+      language generation.
+    </p>
+
+    <div class="technology-grid">
+      <div class="technology-box">
+        <h3>Python</h3>
+        <p>Core programming language</p>
+      </div>
+
+      <div class="technology-box">
+        <h3>Flask</h3>
+        <p>Web application framework</p>
+      </div>
+
+      <div class="technology-box">
+        <h3>TensorFlow</h3>
+        <p>Machine-learning framework</p>
+      </div>
+
+      <div class="technology-box">
+        <h3>LSTM</h3>
+        <p>Neural language model</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about-quote">
+  <div class="quote-content">
+    <p class="quote-mark">“</p>
+
+    <p class="quote-text">
+      You have a right to perform your prescribed duties, but you are not
+      entitled to the fruits of your actions.
+    </p>
+
+    <p class="quote-source">— Bhagavad Gita, Chapter 2, Verse 47</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2026 KrishnaVani. All rights reserved.</p>
+
+    <div class="footer-links">
+      <a href="{{ url_for('about') }}">About</a>
+      <a href="{{ url_for('contact') }}">Contact</a>
+      <a href="/">Home</a>
+    </div>
+  </div>
+</footer>
+
+{% endblock home %}

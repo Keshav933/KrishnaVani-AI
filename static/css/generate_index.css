@@ -1,0 +1,87 @@
+
+    h1 {
+      font-size: 2.5rem;
+      color: #00f8ff;
+      text-shadow: 0 0 10px #00c4b4;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 40px;
+    }
+
+    input[type="text"] {
+      padding: 12px 20px;
+      border-radius: 30px;
+      border: none;
+      width: 300px;
+      max-width: 90%;
+      font-size: 1rem;
+    }
+
+    button {
+      padding: 12px 25px;
+      background: linear-gradient(45deg, #00c4b4, #00f8ff);
+      border: none;
+      color: #021010;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1rem;
+      box-shadow: 0 0 8px #00f8ff;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      background: linear-gradient(45deg, #00f8ff, #00c4b4);
+    }
+
+    .shloka-card {
+      background: #04242b;
+      margin-bottom: 30px;
+      padding: 25px 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .shloka-card h3 {
+      color: #00f8ff;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      text-shadow: 0 0 6px #00c4b4;
+    }
+
+    .shloka-card pre {
+      color: #dffaff;
+      font-size: 1rem;
+      white-space: pre-wrap;
+      margin-bottom: 15px;
+    }
+
+    .shloka-card p {
+      color: #a5e7ec;
+      margin: 5px 0;
+      line-height: 1.6;
+    }
+
+    h2 {
+      color: #00f8ff;
+      text-align: center;
+      margin-bottom: 20px;
+      text-shadow: 0 0 6px #00c4b4;
+    }
+
+    .no-result {
+      color: #c0f4f9;
+      text-align: center;
+      margin-top: 30px;
+    }

@@ -1,0 +1,207 @@
+{% extends 'nav.html' %} {% block home %}
+<div class="study-notice" role="note" aria-label="Project purpose notice">
+  <marquee
+    behavior="scroll"
+    direction="left"
+    scrollamount="5"
+    scrolldelay="35"
+    onmouseover="this.stop()"
+    onmouseout="this.start()"
+  >
+    <strong>Study &amp; Learning Notice:</strong>
+    This project is developed only for study and learning purposes.
+    <span class="notice-dot">✦</span>
+    It is an educational and technical project and should not be associated
+    with, interpreted as, or taken as a religious platform.
+  </marquee>
+</div>
+<section class="hero-section" id="main-section">
+  <div class="left-hero">
+    <h1>Explore the</h1>
+    <h2>Sacred Knowledge of the</h2>
+    <h1 class="highlight">Bhagavad Gita</h1>
+  </div>
+  <div class="right-hero">
+    <div class="hero-img"></div>
+  </div>
+</section>
+
+<div class="divider"></div>
+<div class="divider thinner"></div>
+
+<div class="cards-container">
+  
+  <div class="wrapper">
+    <div class="card">
+      <div class="front-page">
+        <div class="card-info">
+          <h2 class="card-title">AI Shloka Completer</h2>
+          <p class="card-subtitle">Smart Search by Keywords</p>
+        </div>
+      </div>
+      <div class="back-page">
+        <div class="card-content">
+          <h3>AI-Powered Verse Finder</h3>
+          <p class="card-description">
+            Lost in memory? Just type a word or phrase from the shloka and let
+            our advanced AI instantly fetch the full verse with chapter and
+            verse number—no need to remember everything!
+          </p>
+          <a href="/Generate" class="card-button"> AI Generator</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="wrapper">
+    <div class="card">
+      <div class="front-page">
+        <div class="card-info">
+          <h2 class="card-title">Shloka Translator</h2>
+          <p class="card-subtitle">Hindi | English Powered by AI</p>
+        </div>
+      </div>
+      <div class="back-page">
+        <div class="card-content">
+          <h3>Instant Meaning with Spiritual Intelligence</h3>
+          <p class="card-description">
+            Curious about what a verse means? Get crystal-clear translations in
+            Hindi or English with context-aware AI interpretation—making
+            spiritual wisdom easier to understand.
+          </p>
+          <a href="/chapter_verse" class="card-button"> Translate</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="wrapper">
+    <div class="card">
+      <div class="front-page">
+        <div class="card-info">
+          <h2 class="card-title">Verse Navigator</h2>
+          <p class="card-subtitle">By Chapter & Verse Number</p>
+        </div>
+      </div>
+      <div class="back-page">
+        <div class="card-content">
+          <h3>Precise Shloka Lookup</h3>
+          <p class="card-description">
+            Know exactly what you want? Enter chapter and verse to retrieve the
+            exact shloka with full translation, AI insights, and
+            cross-references instantly.
+          </p>
+          <a href="/verse" class="card-button"> Find Shlok</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="wrapper">
+    <div class="card">
+      <div class="front-page">
+        <div class="card-info">
+          <h2 class="card-title">Daily Gita Wisdom</h2>
+          <p class="card-subtitle">AI-Picked Inspirational Verse</p>
+        </div>
+      </div>
+      <div class="back-page">
+        <div class="card-content">
+          <h3>Your Spiritual Daily Boost</h3>
+          <p class="card-description">
+            Start your day with a dose of divine knowledge. Receive a handpicked
+            or AI-recommended Bhagavad Gita verse daily—uplift your mind and
+            fuel your soul.
+          </p>
+          <a href="/daily-wisdom" class="card-button">Reveal Today’s Shloka</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="testimonials">
+  <h2>What Users Say</h2>
+  <div class="testimonial-grid">
+    <div class="testimonial-box">
+      <p>
+        "Absolutely brilliant! This site makes understanding the Gita so much
+        easier."
+      </p>
+      <h4>– Aarti Sharma</h4>
+    </div>
+    <div class="testimonial-box">
+      <p>"Daily Shloka has become a part of my morning routine. Thank you!"</p>
+      <h4>– Vinay R.</h4>
+    </div>
+  </div>
+</section>
+
+<section class="newsletter">
+  <h2>Get Daily Gita Wisdom</h2>
+  <form class="newsletter-form">
+    <input type="email" placeholder="Your Email Address" required />
+    <button type="submit">Subscribe</button>
+  </form>
+</section>
+
+<section class="faq">
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="faq-item">
+    <h3>Is this service free?</h3>
+    <p>
+      Yes, everything is free to use. Our goal is to spread spiritual knowledge
+      and make the Gita more accessible.
+    </p>
+  </div>
+
+  <div class="faq-item">
+    <h3>How are the verses translated?</h3>
+    <p>
+      We use trusted Sanskrit-English translations from scholarly sources. AI
+      helps present them in a reader-friendly format.
+    </p>
+  </div>
+
+  <div class="faq-item">
+    <h3>How are the Shlokas found?</h3>
+    <p>
+      When you enter a keyword or topic, our AI searches a structured dataset of
+      all 700 Bhagavad Gita shlokas and matches the most relevant one based on
+      context and semantics.
+    </p>
+  </div>
+
+  <div class="faq-item">
+    <h3>What is the source of the shlokas?</h3>
+    <p>
+      The shlokas are from the complete Bhagavad Gita, validated against public
+      domain translations and verified Sanskrit texts.
+    </p>
+  </div>
+
+  <div class="faq-item">
+    <h3>Can I search by chapter and verse?</h3>
+    <p>
+      Yes! You can directly enter chapter and verse numbers (e.g., 2.47) to
+      access specific teachings from the Gita.
+    </p>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <h2>Start Your Journey with the Gita Today</h2>
+  <button ><a href="#main-section" style="text-decoration: none;">Explore Now</a></button>
+</section>
+
+<footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2025 Geeta Web. All rights reserved.</p>
+    
+  </div>
+</footer>
+{% endblock home %}
